@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Pomodoro Timer</title>
+  <link href="https://d30y9cdsu7xlg0.cloudfront.net/png/104777-200.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+  <audio id="buzz" src="https://notificationsounds.com/soundfiles/2f55707d4193dc27118a0f19a1985716/file-sounds-897-alarm-frenzy.mp3"></audio>
+</head>
+
+<body>
+
+  <div class="center">
+    <h1 class="clip-text clip-text_one" id="clock">0:0</h1>
+  </div>
+  <div class="control">
+    <div class="card">
+      <h1 class="center">WORK TIME</h1>
+      <div class="work">
+        <button class="btn nice" onclick="Minus('work')">-</button>
+        <h1 class="look clip-text_one" id="workTime">1</h1>
+        <button class="btn first" onclick="Plus('work')">+</button>
+      </div>
+    </div>
+
+    <div class="start">
+      <button id="start" onclick="Start()" class="btn pop">start</button>
+    </div>
+
+    <div class="card">
+      <h1 class="center">BREAK TIME</h1>
+      <div class="break">
+        <button class="btn nice" onclick="Minus('breaks')">-</button>
+        <h1 class="look clip-text_one" id="breakTime">1</h1>
+        <button class="btn first" onclick="Plus('breaks')">+</button>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.10/p5.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+</html>

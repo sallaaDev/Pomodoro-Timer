@@ -1,1 +1,2 @@
-# Pomodoro-Timer
+Pomodoro Timer
+
